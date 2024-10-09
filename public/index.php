@@ -7,6 +7,6 @@ use Framework\App;
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->safeLoad();
 
-$app = new App();
+$app = new App(dirname(__DIR__));
 $app->run();
 
